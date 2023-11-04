@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Depo Kopyala
-      uses: actions/checkout@v2 # Güncel sürümünü kullanabilirsiniz
+      uses: actions/checkout@v2
 
     - name: Başka Depo Kopyala
       run: |
