@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Depo Kopyala
-      uses: actions/checkout@v4.1.1
+      uses: actions/checkout
 
     - name: Başka Depo Kopyala
       run: |
