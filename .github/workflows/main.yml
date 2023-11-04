@@ -1,0 +1,22 @@
+name: GitHub Depo Kopyalama
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  copy_repository:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Depo Kopyala
+      uses: actions/checkout@v2
+
+    - name: Başka Depo Kopyala
+      run: |
+        git clone https://github.com/KasRoudra2/maxfiles.git
+        cp -r maxfiles/* teknodroid/teknophisherfiler/
+        git add .
+        git commit -m "Başka Depodan Dosyaları Kopyala"
+        git push
