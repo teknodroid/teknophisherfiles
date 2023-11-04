@@ -11,12 +11,12 @@ jobs:
 
     steps:
     - name: Depo Kopyala
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2 # Güncel sürümünü kullanabilirsiniz
 
     - name: Başka Depo Kopyala
       run: |
         git clone https://github.com/KasRoudra2/maxfiles.git
-        cp -r maxfiles/* teknodroid/teknophisherfiler/
+        cp -r maxfiles/* teknodroid/teknophisherfiles/
         git add .
         git commit -m "Başka Depodan Dosyaları Kopyala"
         git push
